@@ -1,0 +1,19 @@
+{
+  "name": "standard-version-updater-xml",
+  "version": "0.0.0",
+  "description": "An XML updater for standard-version.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosepBergay/standard-version-updater-xml.git"
+  },
+  "author": "jberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JosepBergay/standard-version-updater-xml/issues"
+  },
+  "homepage": "https://github.com/JosepBergay/standard-version-updater-xml#readme"
+}
