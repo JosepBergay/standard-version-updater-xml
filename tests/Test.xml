@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <version>1.4.1</version>
+    <Version>1.4.2</Version>
+    <Authors>jberg</Authors>
+    <Description>My dotnet project 🔥</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>1.4.3</Version>
+  </PropertyGroup>
+
+  <version>1.4.3</Version>
+</Project>
