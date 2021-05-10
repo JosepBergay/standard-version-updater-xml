@@ -4,7 +4,8 @@
   "description": "An XML updater for standard-version.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "jest --watch",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/JosepBergay/standard-version-updater-xml/issues"
   },
-  "homepage": "https://github.com/JosepBergay/standard-version-updater-xml#readme"
+  "homepage": "https://github.com/JosepBergay/standard-version-updater-xml#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^3.19.0"
+  }
 }
