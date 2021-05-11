@@ -1,4 +1,4 @@
-const xml = require('fast-xml-parser');
+const { create } = require('xmlbuilder2');
 
 const isVersion = key => key === 'version' || key === 'Version';
 
@@ -13,8 +13,9 @@ const findVersion = obj => {
 };
 
 const readVersion = contents => {
-  const obj = xml.getTraversalObj(contents);
-  return findVersion(obj);
+  const doc = create(contents);
+  const versionNode = doc.find(n => isVersion(n.node.nodeName), true, true);
+  return versionNode?.node.textContent;
 };
 
 const writeVersion = (contents, version) => {
