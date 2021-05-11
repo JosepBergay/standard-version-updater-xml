@@ -1,7 +1,16 @@
 {
   "name": "standard-version-updater-xml",
   "version": "0.0.0",
+  "license": "MIT",
+  "author": "Josep Bergay",
   "description": "An XML updater for standard-version.",
+  "keywords": [
+    "conventional-changelog",
+    "standard-version",
+    "standard-version-updater",
+    "standard-version-updater-xml",
+    "updater"
+  ],
   "main": "index.js",
   "scripts": {
     "dev": "jest --watch",
@@ -11,8 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/JosepBergay/standard-version-updater-xml.git"
   },
-  "author": "jberg",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JosepBergay/standard-version-updater-xml/issues"
   },
