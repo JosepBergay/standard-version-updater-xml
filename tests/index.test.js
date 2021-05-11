@@ -4,23 +4,23 @@ const path = require('path');
 
 let singleNodeInput = `<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-<PropertyGroup>
-<TargetFrameworkVersion>net5.0</TargetFrameworkVersion>
-<Version>1.4.1</Version>
-<Authors>jberg</Authors>
-<Description>My dotnet project 🔥</Description>
-</PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion>net5.0</TargetFrameworkVersion>
+    <Version>1.4.1</Version>
+    <Authors>jberg</Authors>
+    <Description>My dotnet project 🔥</Description>
+  </PropertyGroup>
 
 </Project>`;
 
 let singleNodeOutput = `<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-<PropertyGroup>
-  <TargetFrameworkVersion>net5.0</TargetFrameworkVersion>
-  <Version>1.4.2</Version>
-  <Authors>jberg</Authors>
-  <Description>My dotnet project 🔥</Description>
-</PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkVersion>net5.0</TargetFrameworkVersion>
+    <Version>1.4.2</Version>
+    <Authors>jberg</Authors>
+    <Description>My dotnet project 🔥</Description>
+  </PropertyGroup>
 
 </Project>`;
 
