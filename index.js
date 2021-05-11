@@ -19,9 +19,18 @@ const readVersion = contents => {
 };
 
 const writeVersion = (contents, version) => {
-  //   const file = xml.parse(contents);
-  //   file.version = version;
-  //   return new xml.j2xParser().parse(file);
+  const doc = create(contents);
+  doc.find(
+    n => {
+      if (isVersion(n.node.nodeName)) {
+        n.node.textContent = version;
+        return true;
+      }
+    },
+    true,
+    true
+  );
+  return doc.end({ prettyPrint: true });
 };
 
 module.exports = {
