@@ -13,18 +13,17 @@ let singleNodeInput = `<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 </Project>`;
 
-let singleNodeOutput = `<Project Sdk="Microsoft.NET.Sdk.Razor">
-
+let singleNodeOutput = `<?xml version="1.0"?>
+<Project Sdk="Microsoft.NET.Sdk.Razor">
   <PropertyGroup>
     <TargetFrameworkVersion>net5.0</TargetFrameworkVersion>
-    <Version>1.4.2</Version>
+    <Version>2.0.1-alpha.0</Version>
     <Authors>jberg</Authors>
     <Description>My dotnet project 🔥</Description>
   </PropertyGroup>
-
 </Project>`;
 
-describe.only('readVersion', () => {
+describe('readVersion', () => {
   test('single node', () => {
     expect(readVersion(singleNodeInput)).toBe('1.4.1');
   });
@@ -34,6 +33,8 @@ describe.only('readVersion', () => {
   });
 });
 
-test('writeVersion', () => {
-  expect(writeVersion(singleNodeInput, '1.4.2')).toBe(singleNodeOutput);
+describe('writeVersion', () => {
+  test('single node', () => {
+    expect(writeVersion(singleNodeInput, '2.0.1-alpha.0')).toBe(singleNodeOutput);
+  });
 });
