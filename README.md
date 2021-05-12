@@ -25,6 +25,7 @@ const xmlTracker = {
 
 module.exports = {
   packageFiles: [xmlTracker],
+  bumpFiles: [xmlTracker],
 };
 ```
 
@@ -37,10 +38,16 @@ module.exports = {
       "filename": "PATH_TO_MY_XML_FILE",
       "updater": "node_modules/standard-version-updater-xml/index.js"
     }
+  ],
+  "bumpFiles": [
+    {
+      "filename": "PATH_TO_MY_XML_FILE",
+      "updater": "node_modules/standard-version-updater-xml/index.js"
+    }
   ]
 }
 ```
-Then, use standard-version in your preferred flavour (mine):
+Then, use standard-version in your preferred flavour. Mine:
 ```bash
 npx standard-version
 ```
