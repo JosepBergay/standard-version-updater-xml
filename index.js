@@ -5,7 +5,7 @@ const isVersion = key => key === 'version' || key === 'Version';
 const readVersion = contents => {
   const doc = create(contents);
   const versionNode = doc.find(n => isVersion(n.node.nodeName), true, true);
-  return versionNode?.node.textContent;
+  return versionNode && versionNode.node.textContent;
 };
 
 const writeVersion = (contents, version) => {

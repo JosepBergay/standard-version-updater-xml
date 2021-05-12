@@ -12,6 +12,9 @@
     "updater"
   ],
   "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "dev": "jest --watch",
     "test": "jest"
