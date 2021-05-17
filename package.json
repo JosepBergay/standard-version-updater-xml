@@ -1,8 +1,6 @@
 {
   "name": "standard-version-updater-xml",
-  "version": "0.0.0",
-  "license": "MIT",
-  "author": "Josep Bergay",
+  "version": "1.0.0",
   "description": "An XML updater for standard-version.",
   "keywords": [
     "conventional-changelog",
@@ -12,6 +10,9 @@
     "updater"
   ],
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "engines": {
     "node": ">=10"
   },
@@ -23,6 +24,8 @@
     "type": "git",
     "url": "git+https://github.com/JosepBergay/standard-version-updater-xml.git"
   },
+  "author": "Josep Bergay",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JosepBergay/standard-version-updater-xml/issues"
   },
