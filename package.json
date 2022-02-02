@@ -18,6 +18,7 @@
   },
   "scripts": {
     "dev": "jest --watch",
+    "release": "standard-version",
     "test": "jest"
   },
   "repository": {
