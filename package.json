@@ -14,7 +14,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "dev": "jest --watch",
@@ -31,10 +31,11 @@
   },
   "homepage": "https://github.com/JosepBergay/standard-version-updater-xml#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "jest": "^26.6.3"
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "standard-version": "^9.3.2"
   },
   "dependencies": {
-    "xmlbuilder2": "^2.4.1"
+    "xmlbuilder2": "^3.0.2"
   }
 }
