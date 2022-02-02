@@ -23,9 +23,16 @@ const xmlTracker = {
   updater: xmlUpdater,
 };
 
+// you can also pass write options to xmlUpdater
+const prettyTracker = {
+  filename: 'PATH_TO_MY_XML_FILE',
+  updater: xmlUpdater({ prettyPrint: true, headless: true }),
+};
+
+
 module.exports = {
-  packageFiles: [xmlTracker],
-  bumpFiles: [xmlTracker],
+  packageFiles: [prettyTracker],
+  bumpFiles: [prettyTracker],
 };
 ```
 
@@ -55,4 +62,4 @@ npx standard-version
 ## Notes
 * You can use any file parseable by [xmlbuilder2](https://github.com/oozcitak/xmlbuilder2), even ``.csproj`` files!
 * Empty lines will be removed when writing version.
-* An xml declaration will be added on top the file if it's not already present.
+* An xml declaration will be added on top the file if it's not already present. To avoid this, pass ``headless: true`` to xmlUpdater, see example above.
